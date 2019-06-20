@@ -1,10 +1,12 @@
 import React from 'react';
-import ReactDom from 'react-dom';
+import ReactDOM from 'react-dom';
 
 
 const App = () =>{
-    return <h1>Hello</h1>
+    return (<h1>Hello</h1>)
 };
 
 
-ReactDom.render(<App/>,document.getElementById("app"));
+document.addEventListener('DOMContentLoaded', () => {
+    ReactDOM.render(<App />, document.querySelector('#app'))
+})
